@@ -1,0 +1,9 @@
+{
+  "name": "obsidian-todo-automator",
+  "version": "0.1.0",
+  "description": "Automates your Obsidian todo list with daily, weekly, monthly, and annual review cycles. Creates recurring tasks, rolls over unfinished items, and builds an interactive timeline dashboard.",
+  "author": {
+    "name": "J"
+  },
+  "keywords": ["obsidian", "tasks", "productivity", "todo", "review", "recurring", "automation"]
+}

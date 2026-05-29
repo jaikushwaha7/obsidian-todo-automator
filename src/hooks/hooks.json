@@ -1,0 +1,14 @@
+{
+  "PreToolUse": [
+    {
+      "matcher": "Read|Write|Edit|Glob|Grep",
+      "hooks": [
+        {
+          "type": "prompt",
+          "prompt": "A tool is about to access a file or folder. Check if the file path in TOOL_INPUT looks like it is inside an Obsidian vault (contains 'Obsidian', 'vault', or '.obsidian') or a cloud storage path (contains 'Google Drive', 'OneDrive', 'iCloud', 'Dropbox'). If it IS one of those locations, return {\"decision\": \"ask_user\", \"reason\": \"This will {{action}} {{path}} in your vault/cloud storage. Allow?\"}. Replace {{action}} with 'read from' for Read/Glob/Grep and 'write to' for Write/Edit. Replace {{path}} with the file or folder path from TOOL_INPUT. If the path is NOT a vault or cloud storage path, return {\"decision\": \"approve\"}.",
+          "timeout": 15
+        }
+      ]
+    }
+  ]
+}
